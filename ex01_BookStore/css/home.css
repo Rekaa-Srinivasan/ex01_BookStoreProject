@@ -1,0 +1,66 @@
+body{
+    margin: 0px 0px;
+}
+.navbar{
+    height: 90px;
+}
+.home-banner{
+    width: 1263px;
+    height: 800px;
+    background-color: #1B3764;
+    position: sticky;
+    display: flex;
+    gap: 156px;
+}
+.home-banner .bookMessage{
+    width: 542px;
+    position: relative;
+    display: inline-block;
+    left: 160px;
+    padding: 120px 0px 120px 0px;
+}
+.home-banner .bookMessage #subTitle{
+    font-family: serif;
+    font-style: italic;
+    font-size: large;
+    color: white;
+    margin: 0px 0px;
+}
+.home-banner .bookMessage #content1{
+    font-family: serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: white;
+}
+.home-banner .bookMessage #content2{
+    font-family: sans-serif;
+    font-size: smaller;
+    font-weight: lighter;
+    line-height: 20px;
+    margin-top: 0px;
+    color: white;
+}
+button{
+    background-color: #ffca42;
+    color: #1B3764;
+    font-weight: 600;
+    padding: 10px;
+    width: 150px;
+    height: 45px;
+    border: none;
+}
+.home-banner .bookMessage #freeDemoLink {
+    padding-left: 36px;
+    color: white;
+    font-size: small;
+}
+.home-banner .bookMessage #details li{
+    float: left;
+    padding-right: 100px;
+    color: white;
+}
+.home-banner .book{
+    padding-top: 30px;
+    display: inline-block;
+}

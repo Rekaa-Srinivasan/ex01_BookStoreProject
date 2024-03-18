@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+header {
+    /* height: 1900px; */
+    width: 1263px;
+}
+.navbar {
+    width: 1263px;
+    height: 90px;
+}
+.footer {
+    width: 1263px;
+    height: 325px;
+}
+.blog-banner {
+    background-color: #1B3764;;
+    padding-top: 75px;
+    padding-left: 402px;
+    padding-right: 403px;
+    width: 458px;
+    height: 185px;
+}
+.blog-banner h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-weight: 100;
+    padding-bottom: 14px;
+}
+.blog-banner hr {
+    width: 8%;
+    border: 1.7px solid #FFCA42;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.blog-banner p {
+    font-family: sans-serif;
+    color: rgb(203 203 203 / 81%);
+    font-size: small;
+    text-align: center;
+    padding-top: 11px;
+    line-height: 23px;
+}
+main {
+    width: 100%;
+    height: 1400px;
+    background-color: #F5F8FC;
+    padding-top: 100px;
+}
+.blogArticles {
+    width: 77%;
+    height: 1400px;
+    position: relative;
+    /* padding-top: 100px; */
+    left: 160px;
+    /* background-color: red; */
+    display: grid;
+    /* grid-template-areas: 'blog-article blog-article blog-article'; */
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    /* grid-template-columns: 33.33% 33.33% 33.33%; */
+    gap: 20px;
+
+}
+.blogArticles .blogSection {
+    /* width: auto;
+    height: 33.33%; */
+    display: flex;
+    gap: 25px;
+    background-color: #F5F8FC;
+}
+.blogArticles .blogSection article {
+    grid-area: blog-article;
+    width: 33.33%;
+    height: auto;
+    /* display: flex; */
+    /* background-color: blue; */
+}
+.blogArticles .blogSection article img {
+    width: -webkit-fill-available;
+    height: 215px;
+}
+.blogArticles .blogSection article .blogInfo {
+    height: max-content;
+    background-color: white;
+    padding: 23px;
+}
+.blogArticles .blogSection article .blogInfo h3 {
+    margin-top: 0;
+    font-family: serif;
+    color: #1B3764;
+    line-height: 23px;
+
+}
+.blogArticles .blogSection article .blogInfo #blogDescription {
+    font-family: sans-serif;
+    color: rgb(131 131 131 / 81%);
+    line-height: 24px;
+    font-size: 13px;
+    margin: 0;
+}
+.blogArticles .blogSection article .blogInfo #blogLink {
+    font-family: serif;
+    color: #1B3764;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+.blogArticles .blogSection article .blogInfo #blogLink a{
+    padding-right: 53px;
+    color: #1B3764;
+}
