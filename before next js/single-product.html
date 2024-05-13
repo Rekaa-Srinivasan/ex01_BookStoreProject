@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.1"></script>
+    <script src="./js/single-product.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navigation-bar-container bg-primary-color flex flex-col lg:flex-row px-4 py-2 md:px-20 md:py-4 justify-between gap-1">
+        <div class="icon flex flex-row gap-8 items-center">
+            <img class="store_logo w-mobile-logo lg:w-logo" src="./images/Vector.png" alt="logo">
+            <h3 class="storeName justify-end mr-auto font-inter font-bold text-m lg:text-l text-tertiary-bg-color">Pages</h3>
+            <div class="icons flex flex-row gap-3">
+                <div class="inline-block"><a href=""><i class="fa-brands fa-square-facebook fa-xl text-white"></i></a></div>
+                <div class="inline-block"><a href=""><i class="fa-brands fa-square-twitter fa-xl text-white"></i></a></div>
+                <div class="inline-block"><a href=""><i class="fa-brands fa-linkedin fa-xl text-white"></i></a></div>
+            </div>
+            <i class="fa-light fa-bars fas fa-xl block lg:hidden text-white"></i>
+        </div>
+        <div class="menus hidden lg:flex lg:flex-row lg:gap-12 lg:items-center">
+            <ul class="lg:flex lg:gap-8 xl:gap-12">
+                <a href=""><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold">Home</li></a>
+                <a href=""><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold">Pages</li></a>
+                <a href="./about-the author/about-the-author.html"><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold">About</li></a>
+                <a href="./store.html"><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold">Services</li></a>
+                <a href=""><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold">Contact</li></a>
+                <a href=""><li class="lg:float-left font-inter font-normal text-tertiary-bg-color text-sm xl:text-m py-2 lg:py-0 active:text-primary-color active:bg-tertiary-bg-color active:font-bold relative"><i class="fa fa-thin fa-cart-shopping fa-lg"></i><img class="w-3 absolute top-0 right-0" src="./images/Number.png" alt=""></li></a>
+            </ul>
+            <div>
+                <a href="./sign-up.html"><i class="fa-solid fa-user fa-xl text-white"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="single_product_banner bg-primary-color pt-14">
+        <h1 class="single_product_banner_title font-cardo text-center text-tertiary-bg-color text-xxl font-bold pb-4 underline decoration-quaternary-color decoration-solid underline-offset-8">My Store</h1>
+        <p class="single_product_banner_description font-inter text-center text-banner-secondary-font-color text-sm font-normal leading-7 md:px-40 lg:px-60 xl:px-banner-paragraph pb-14">There are many variations of passages of Lorem Ipsum available, have suffered alteration in some form.</p>
+    </div>
+    <article class="product_container sm:px-12 sm:py-8 lg:px-48 lg:py-11 flex flex-wrap text-center">
+        
+    </article>
+    <section class="about_product lg:px-48 lg:py-10 sm:px-4 sm:py-8 flex flex-col">
+        
+    </section>
+    <section class="services sm:px-1 lg:p-main-container flex flex-row flex-wrap items-center justify-center bg-quaternary-color gap-20">
+        <article class="product_service basis-2/5 lg:basis-1/4">
+            <div class="service_logo_conatiner text-center relative flex justify-center py-4">
+                <img class="service_logo h-2/5 border-2 border-solid border-primary-color p-2 bg-primary-color" src="./images/single-product/payment.png" alt="Secure payments logo">
+                <img class="absolute top-9 left-41" src="./images/single-product/Vector (4).png" alt="">
+            </div>
+            <h3 class="service_name font-cardo text-m font-bold text-center text-primary-color pb-2">Secure Payments</h3>
+            <p class="service_description font-inter text-sm font-normal text-center text-primary-color">There are many variations of passages of alteration in some form.</p>
+        </article>
+        <article class="product_service basis-2/5 lg:basis-1/4">
+            <div class="service_logo_conatiner text-center relative flex justify-center py-4">
+                <img class="service_logo h-2/5 border-2 border-solid border-primary-color p-2 bg-primary-color" src="./images/single-product/shipping.png" alt="Free Shipping logo">
+                <img class="absolute top-9 left-41" src="./images/single-product/shipping-2.png" alt="">
+            </div>
+            <h3 class="service_name font-cardo text-m font-bold text-center text-primary-color pb-2">Free Shipping</h3>
+            <p class="service_description font-inter text-sm font-normal text-center text-primary-color">There are many variations of passages of alteration in some form.</p>
+        </article>
+        <article class="product_service basis-2/5 lg:basis-1/4">
+            <div class="service_logo_conatiner text-center flex justify-center py-4">
+                <img class="service_logo h-2/5 border-2 border-solid border-primary-color p-2 bg-primary-color" src="./images/single-product/satisfaction.png" alt="Satisfaction logo">
+            </div>
+            <h3 class="service_name font-cardo text-m font-bold text-center text-primary-color pb-2">100% Satisfactions</h3>
+            <p class="service_description font-inter text-sm font-normal text-center text-primary-color">There are many variations of passages of alteration in some form.</p>
+        </article>
+    </section>
+    <footer class="bg-primary-color">
+        <div class="footer_container flex flex-wrap px-12 py-8 xl:px-48 xl:py-11 gap-8 xl:justify-around">
+            <div>
+                <div class="store_identity flex">
+                    <img class="logo w-5" src="./images/Vector.png" alt="logo">
+                    <h3 class="store_name font-inter text-white font-bold text-m pl-2">Pages</h3>
+                </div>
+                <div class="icon pt-7">
+                    <a class="icon_links border-2 border-solid border-quaternary-color px-3 py-1.5" href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+                    <a class="icon_links border-2 border-solid border-quaternary-color px-2.5 py-1.5" href=""><i class="fa-brands fa-twitter text-white"></i></a>
+                    <a class="icon_links border-2 border-solid border-quaternary-color px-2.5 py-1.5" href=""><i class="fa-brands fa-linkedin text-white"></i></a>
+                    <a class="icon_links border-2 border-solid border-quaternary-color px-2.5 py-1.5" href=""><i class="fa-brands fa-instagram text-white"></i></a>
+                </div>
+            </div>
+            <div class="footer_links flex flex-wrap gap-4 lg:gap-16">
+                <div class="explore">
+                    <p class="link_category font-cardo text-white font-bold text-m">Explore</p>
+                    <ul class="exploreList pt-5">
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Home</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="./about-the author/about-the-author.html">About Us</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="./store.html">Services</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Appointments</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="./blog/blog.html">Blog</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="utility">
+                    <p class="link_category font-cardo text-white font-bold text-m">Utility Pages</p>
+                    <ul class="utilityList pt-5">
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Start Here</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Style Guide</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">404 Not Found</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Password Protected</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Licenses</a></li>
+                        <li class="font-inter text-banner-secondary-font-color text-sm font-normal py-1">
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i>
+                            <i class="fa-regular fa-circle fa-2xs text-icon text-quaternary-color"></i><a class="pl-2" href="">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p class="link_category font-cardo text-white font-bold text-m">Keep In Touch</p>
+                    <address class="contact_details pt-5">
+                        <p><span class="contact_via font-cardo text-white font-bold text-sm">Address : </span><span class="contact_address font-inter text-banner-secondary-font-color text-sm font-normal">24A Kingston St, Los Vegas NC 28202, USA.</span></p>
+                        <p><span class="contact_via font-cardo text-white font-bold text-sm">Mail : </span><span class="contact_address font-inter text-banner-secondary-font-color text-sm font-normal">support@doctors.com</span></p>
+                        <p><span class="contact_via font-cardo text-white font-bold text-sm">Phone : </span><span class="contact_address font-inter text-banner-secondary-font-color text-sm font-normal">(+22) 123 - 4567 - 900</span></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <hr class="copyrightSeparator sm:mx-12 lg:mx-48">
+        <div class="copyright text-center">
+            <p class="font-inter font-normal text-banner-secondary-font-color text-xs py-3"><i class="fa fa-regular fa-copyright fa-sm pr-2"></i>Drafted by <span class="text-white">Victorflow</span> - Powered by <span class="text-white">Webflow</span></p>
+        </div>
+    </footer>
+</body>
+</html>

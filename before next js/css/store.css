@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: -webkit-center;
+    box-sizing: border-box;
+}
+
+.store_banner {
+    background-color: #1B3764;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.store_banner .store_title {
+    font-family: "cardo";
+    text-align: center;
+    color: white;
+    margin: 0% 45%;
+    border-bottom: 3px solid #FFCA26;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.store_banner .store_description {
+    font-family: "inter";
+    color: #B4C7E7;
+    font-size: small;
+    text-align: center;
+    margin: 0 auto;
+    width: 32%;
+    padding-top: 1%;
+    line-height: 1.7;
+}
+.store_container {
+    padding: 7% 12% 3% 12%;
+}
+.store_container .books_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
+}
+.store_container .books_list .book {
+    /* width: 30%; */
+    padding-bottom: 4%;
+}
+.store_container .books_list .book .book_container {
+    padding: 10% 4% 4% 4%;
+    background-color: #F5F8FC;
+}
+.store_container .books_list .book_image {
+    width: 80%;
+}
+.store_container .books_list .book_info {
+    text-align: left;
+    padding: 4% 0%;
+}
+.store_container .books_list .book_title {
+    font-family: "cardo";
+    display: inline-block;
+    padding-right: 36%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1B3764;
+}
+.store_container .books_list .book_price {
+    font-family: "inter";
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFCA42;
+}
+.store_container .books_list .book_description {
+    font-family: "inter";
+    font-weight: 400;
+    text-align: left;
+    font-size: 13px;
+    margin: 3% 0%;
+    color: #969AA0;
+    line-height: 22px;
+}
+.store_container .books_list .book_type {
+    font-family: "inter";
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 6%;
+    color: #1B3764;
+}
+.store_container .books_list .book_order_button {
+    font-family: "cardo";
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1B3764;
+    border: 1px solid #FFCA42;
+    padding: 3% 12%;
+    background-color: white;
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .store_container .books_list .book {
+        flex: 1 0 33%;
+    }
+}
+@media screen and (min-width: 810px) {
+    .store_container .books_list .book {
+        flex: 1 0 28%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .store_banner .store_title {
+        font-size: 50px;
+    }
+    .store_banner .store_description {
+        font-size: 23px;
+    }
+    .store_container .books_list .book .book_info .book_title {
+        font-size: 30px;
+    }
+    .store_container .books_list .book .book_info .book_price {
+        font-size: 23px;
+    }
+    .store_container .books_list .book .book_info .book_description {
+        font-size: 20px;
+        padding: 4% 0%;
+    }
+    .store_container .books_list .book .book_info i {
+        font-size: small;
+    }
+    .store_container .books_list .book .book_info .book_type {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .store_container .books_list .book .book_info .book_order_button {
+        font-size: 22px;
+    }
+}
